@@ -1,0 +1,59 @@
+<head>
+<!DOCTYPE html>
+<html lang="en" class="mx-auto">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body class="bg-light">
+    <header class="align-baseline bg-secondary bg-gradient text-white py-3">
+        <h1 class="ms-4 align-items">Weather Dashboard</h1>
+    </header>
+
+    <main class="">
+        <aside class="py-2 px-4 bg-gradient-to-r from-indigo-950 to-indigo-500 d-flex justify-content-between align-items-center">
+            <h2 class="text-2xl text-zinc-100 font-extrabold">Search A City</h2>
+            <form id="search-form" class="form d-flex flex-column">
+                <input id="city-input" class="my-1 px-2 py-1" type="search" name="search">
+                <button id="submit-btn" class="my-1 btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+            <div id="search-history" class="history mx-1 mt-3 text-center">
+            </div>
+        </aside>
+
+        <div class="container-fluid">
+            <section class="d-flex mt-3 p-2 border border-secondary-subtle rounded-1 bg-secondary bg-gradient text-white shadow">
+                <div>
+                    <h2 id="city-name">City Name</h2>
+                    <h4 id="date">Date: MM/DD/YYYY hh:mm a</h4>
+                    <p id="temp">Temperature:</p>
+                    <p id="wind">Wind:</p>
+                    <p id="humidity">Humidity:</p>
+                </div>
+                <div class="icon m-auto"></div>
+            </section>
+
+            <section>
+                <h4 class="mt-5 mb-4">Five Day Forecast</h4>
+                <div id="forecast-div" class="d-flex flex-wrap container-fluid gap-2">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center pt-2 mt-3 border-top border-dark-subtle bg-body-secondary">
+        <p class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover mx-2">&copy 2024</p>
+        <p class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover mx-2">Juan J Vargas</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
